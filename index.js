@@ -85,7 +85,9 @@ case "addt1":
                 }
                 
         break;
-
+case "wdhawoh":
+        message.channel.send("sup");
+        break;
         case "points":
         message.channel.send(pointst1);
         break;
