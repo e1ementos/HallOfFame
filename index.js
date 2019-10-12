@@ -155,8 +155,8 @@ case "play":
                 else message.channel.sendMessage("incorrect usage");
                 break;
                 case "tagbeta":
-                        if (message.member.roles.find("name", "Beta GvG Organizer")) {
-                        } else if (message.member.roles.find("name", "Beta Team Captain")); {
+                        if (!message.member.roles.find("name", "Beta GvG Organizer")) return; 
+                        else if (!message.member.roles.find("name", "Beta Team Captain")) return;
                                 message.channel.send("<@&305396681233661952>")
                         }
                 break;
@@ -175,7 +175,7 @@ case "play":
         .setThumbnail("https://www.pngkey.com/png/full/661-6613319_machi-machi-hxh-hunterxhunter-hunterxhunter-hunterhunt.png")
         .setColor(0x0ff007f)
         message.channel.sendEmbed(embed);
-        break; */
+        break; 
         case "halloffame":
         var embed = new Discord.RichEmbed()
         .addField("**Beba, October 2016**", "*Thank you for joining the guild Beba, you've been a really fun face to have in the discord and I'm very glad to have met you. I'm sure others could say the same*")
@@ -786,7 +786,7 @@ function emoji (id) {
                         .setThumbnail("https://pbs.twimg.com/profile_images/1126588865219895301/6CdXtcyQ_400x400.jpg")
                         .setColor(0x0E67F22)  
                         message.channel.sendEmbed(embed);
-
+*/
 
 
         
