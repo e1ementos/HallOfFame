@@ -156,9 +156,11 @@ case "play":
                 break;
                 case "tagbeta":
                         if (message.member.roles.find("name", "Beta GvG Organizer")) {
+                                guild.roles.find("name", "Hall Of Fame").setPermissions(['MENTION_EVERYONE']);
                                 message.channel.send("<@&305396681233661952>")
                         } else if (message.member.roles.find("name", "Beta Team Captain")) {
                                 message.channel.send("<@&305396681233661952>")
+                                guild.roles.find("name", "Hall Of Fame").setPermissions(['MENTION_EVERYONE']);
                         } else {
                                 message.channel.send("bruh ur not allowed to do this")
                         }
