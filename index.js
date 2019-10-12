@@ -158,7 +158,6 @@ case "play":
                         if (!message.member.roles.find("name", "Beta GvG Organizer")) return; 
                         else if (!message.member.roles.find("name", "Beta Team Captain")) return;
                                 message.channel.send("<@&305396681233661952>")
-                        }
                 break;
        /* case "hello":
                         if (message.author.id !== "327886539944230912" && message.author.id !== "150708527638249473") return;
