@@ -1,0 +1,28 @@
+{
+  "name": "HallOfFame",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "opusscript": "^0.0.7",
+    "request": "^2.88.0",
+    "snekfetch": "^4.0.4",
+    "ytdl-core": "^0.29.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "bot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajonsickle/HallOfFame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajonsickle/HallOfFame/issues"
+  },
+  "homepage": "https://github.com/ajonsickle/HallOfFame#readme"
+}
