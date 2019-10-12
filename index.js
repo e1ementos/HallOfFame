@@ -797,4 +797,4 @@ function emoji (id) {
 
 });
 
-bot.login(process.env.TOKEN);
+bot.login(TOKEN);
