@@ -52,9 +52,9 @@ if (message.content.contains == "<@625024270984282112>") {
         message.author.sendMessage("i love u");
 }
 
-if (!message.content.startsWith(PREFIX)) return;
+if (!message.content.startsWith(prefix)) return;
 
-var args = message.content.substring(PREFIX.length).split(" ");
+var args = message.content.substring(prefix.length).split(" ");
 
 
 switch (args[0].toLowerCase()) {
@@ -200,6 +200,56 @@ case "play":
                                 message.channel.send("bruh ur not allowed to do this")
                         }
                 break;
+                case "tagapps":
+                                let role1 = message.guild.roles.get("231224506713112586") 
+                        if (message.member.roles.find(role => role.name === "Applications Team")) {
+                                
+
+                                        role1.setMentionable(true);
+                                        
+                                       
+
+                                setTimeout(function() {
+                                        
+                                        message.channel.send("<@&231224506713112586>");
+                                        
+                                        }, 2000);
+                                
+                                        
+                                        setTimeout(function() {
+                                                role1.setMentionable(false);
+                                                }, 5000);
+
+                        } else {
+                                message.channel.send("bruh ur not allowed to do this")
+                        }
+                break;
+
+                case "tagevents":
+                                let role2 = message.guild.roles.get("276124744250818570") 
+                        if (message.member.roles.find(role => role.name === "Events Team")) {
+                                
+
+                                        role2.setMentionable(true);
+                                        
+                                       
+
+                                setTimeout(function() {
+                                        
+                                        message.channel.send("<@&276124744250818570>");
+                                        
+                                        }, 2000);
+                                
+                                        
+                                        setTimeout(function() {
+                                                role2.setMentionable(false);
+                                                }, 5000);
+
+                        } else {
+                                message.channel.send("bruh ur not allowed to do this")
+                        }
+                break;
+
        /* case "hello":
                         if (message.author.id !== "327886539944230912" && message.author.id !== "150708527638249473") return;
                         var embed = new Discord.RichEmbed()
