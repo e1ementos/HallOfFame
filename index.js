@@ -250,6 +250,31 @@ case "play":
                         }
                 break;
 
+                case "tagpartynotifs":
+                                let role3 = message.guild.roles.get("351908257285275648") 
+                        if (message.member.roles.find(role => role.name === "Events Team")) {
+                                
+
+                                        role3.setMentionable(true);
+                                        
+                                       
+
+                                setTimeout(function() {
+                                        
+                                        message.channel.send("<@&351908257285275648>");
+                                        
+                                        }, 2000);
+                                
+                                        
+                                        setTimeout(function() {
+                                                role3.setMentionable(false);
+                                                }, 5000);
+
+                        } else {
+                                message.channel.send("bruh ur not allowed to do this")
+                        }
+                break;
+
        /* case "hello":
                         if (message.author.id !== "327886539944230912" && message.author.id !== "150708527638249473") return;
                         var embed = new Discord.RichEmbed()
