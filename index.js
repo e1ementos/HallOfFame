@@ -154,6 +154,7 @@ case "play":
                 if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
                 else message.channel.sendMessage("incorrect usage");
                 break;
+                
                 case "tagbeta":
                                 let role = message.guild.roles.get("305396681233661952") 
                         if (message.member.roles.find(role => role.name === "Beta GvG Organizer")) {
