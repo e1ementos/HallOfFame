@@ -156,9 +156,12 @@ case "play":
                 break;
                 case "tagbeta":
                         if (message.member.roles.find("name", "Beta GvG Organizer")) {
-                                guild.roles.find("name", "Beta") 
-                                mentionable: true
+                                guild.channel.roles.find("name", "Beta").role.edit({mentionable: true})
+
                                 message.channel.send("<@&305396681233661952>")
+
+                                guild.channel.roles.find("name", "Beta").role.edit({mentionable: false})
+
                         } else if (message.member.roles.find("name", "Beta Team Captain")) {
                                 message.channel.send("<@&305396681233661952>")
                                 guild.roles.find("name", "Beta")
