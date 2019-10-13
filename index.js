@@ -155,18 +155,46 @@ case "play":
                 else message.channel.sendMessage("incorrect usage");
                 break;
                 case "tagbeta":
-                        if (message.member.roles.find("name", "Beta GvG Organizer")) {
-                                let betaRole = message.guild.roles.get(305396681233661952)
-
-                                betaRole.setMentionable(true, 'Needs to be pinged')
-
-                                message.channel.send("<@&305396681233661952>")
-
-                                betaRole.setMentionable(false, 'Turned off')
-
-                        } else if (message.member.roles.find("name", "Beta Team Captain")) {
-                                message.channel.send("<@&305396681233661952>")
+                                let role = message.guild.roles.get("305396681233661952") 
+                        if (message.member.roles.find(role => role.name === "Beta GvG Organizer")) {
                                 
+
+                                        role.setMentionable(true);
+                                        
+                                       
+
+                                setTimeout(function() {
+                                        
+                                        message.channel.send("<@&305396681233661952>");
+                                        
+                                        }, 2000);
+                                
+                                        
+                                        setTimeout(function() {
+                                                role.setMentionable(false);
+                                                }, 5000);
+                                       
+
+                        } else if (message.member.roles.find(role => role.name === "Beta Team Captain")) {
+
+
+                                role.setMentionable(true);
+                             
+                                
+
+                                setTimeout(function() {
+                                        
+                                        message.channel.send("<@&305396681233661952>");
+                                        
+                                        }, 2000);
+                                
+                                        setTimeout(function() {
+                                        role.setMentionable(false);
+                                        }, 5000);
+                                
+
+                                
+
                         } else {
                                 message.channel.send("bruh ur not allowed to do this")
                         }
