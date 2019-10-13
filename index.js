@@ -157,12 +157,13 @@ case "play":
                 
                 case "tagbeta":
                                 let role = message.guild.roles.get("305396681233661952") 
-                        if (message.member.roles.find(role => role.name === "Beta GvG Organizer")) {
+
+                                if (message.member.roles.find(role => role.name === "Beta GvG Organizer")) {
                                 
 
-                                        role.setMentionable(true);
+                                        role1.setMentionable(true);
                                         
-
+                                       
 
                                 setTimeout(function() {
                                         
@@ -172,16 +173,16 @@ case "play":
                                 
                                         
                                         setTimeout(function() {
-                                                role.setMentionable(false);
+                                                role1.setMentionable(false);
                                                 }, 5000);
                                        
 
                         } else if (message.member.roles.find(role => role.name === "Beta Team Captain")) {
 
 
-                                role.setMentionable(true);
-                             
-                                
+                                role1.setMentionable(true);
+                                        
+                                       
 
                                 setTimeout(function() {
                                         
@@ -189,9 +190,10 @@ case "play":
                                         
                                         }, 3000);
                                 
+                                        
                                         setTimeout(function() {
-                                        role.setMentionable(false);
-                                        }, 5000);
+                                                role1.setMentionable(false);
+                                                }, 5000);
                                 
 
                                 
