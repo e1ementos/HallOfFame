@@ -912,4 +912,4 @@ function emoji (id) {
 
 });
 
-bot.login(TOKEN);
+bot.login();
