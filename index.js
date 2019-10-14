@@ -252,6 +252,18 @@ case "play":
                         }
                 break;
 
+                case "coinflip":
+                                if (args[1])  {
+                                        var embed = new Discord.RichEmbed()
+                                .addField(coinflipp[Math.floor(Math.random() * coinflipp.length)])
+                                .setThumbnail("https://mpng.pngfly.com/20181130/fle/kisspng-clip-art-coin-flipping-vector-graphics-illustratio-hand-flips-coin-in-heads-or-tails-toss-vector-im-5c01faedd97120.7730835315436336458907.jpg")
+                                .setColor(0x0ff007f)
+                                message.channel.sendEmbed(embed);
+                                
+                                }
+                                else message.channel.send("Incorrect usage!")
+                break;
+
                 case "tagpartynotifs":
                                 let role3 = message.guild.roles.get("351908257285275648") 
                         if (message.member.roles.find(role => role.name === "Events Team")) {
