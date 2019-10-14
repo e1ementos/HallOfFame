@@ -33,18 +33,14 @@ var coinflipp = [
 ]
 
 var roulette = [
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
         ":gun: :skull_crossbones: - You've been shot and killed!",
         ":gun: - Empty barrel!",
-        ":gun: :skull_crossbones: - You've been shot and killed!",
-        ":gun: :skull_crossbones: - You've been shot and killed!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        
 ]
-
 
 var bot = new Discord.Client();
 
@@ -96,6 +92,17 @@ case "roulette":
                 .setColor(0x0ff007f)
                 .setFooter('riahof bot best bot')
                 message.channel.sendEmbed(embed);
+break;
+case "roulette2":
+                var options = roulette.length
+
+                case "roulette":
+                    index = Math.floor(Math.random()) *  options
+                    message.channel.send("**RUSSIAN ROULETTE!**", roulette[options.slice(0, 6)][index])
+                    if (index == 0) {
+                        options = roulette.length
+                    }
+                    else options = options - 1
 break;
 case "addt1":
         var pointst1 = 0
