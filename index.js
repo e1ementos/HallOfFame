@@ -151,8 +151,17 @@ case "play":
 	        message.channel.send(avatarEmbed);
                         break;
         case "8ball":
-                if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
-                else message.channel.sendMessage("incorrect usage");
+                if (args[1])  {
+                        var embed = new Discord.RichEmbed()
+                                .addField("**8BALL RESULTS!**", fortunes[Math.floor(Math.random() * fortunes.length)])
+                                .setThumbnail("http://www.transparentpng.com/thumb/8-ball-pool/N9G8Rr-8-ball-pool-images-png.png")
+                                .setColor(0x0ff007f)
+                                message.channel.sendEmbed(embed);
+                }
+
+                else {
+                message.channel.sendMessage("incorrect usage");
+                }
                 break;
                 
                 case "tagbeta":
