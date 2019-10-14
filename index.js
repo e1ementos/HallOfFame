@@ -169,7 +169,7 @@ case "play":
                                         
                                         message.channel.send("<@&305396681233661952>");
                                         
-                                        }, 3000);
+                                        }, 2000);
                                 
                                         
                                         setTimeout(function() {
@@ -188,7 +188,7 @@ case "play":
                                         
                                         message.channel.send("<@&305396681233661952>");
                                         
-                                        }, 3000);
+                                        }, 2000);
                                 
                                         
                                         setTimeout(function() {
@@ -215,7 +215,7 @@ case "play":
                                         
                                         message.channel.send("<@&231224506713112586>");
                                         
-                                        }, 3000);
+                                        }, 2000);
                                 
                                         
                                         setTimeout(function() {
@@ -240,7 +240,7 @@ case "play":
                                         
                                         message.channel.send("<@&276124744250818570>");
                                         
-                                        }, 3000);
+                                        }, 2000);
                                 
                                         
                                         setTimeout(function() {
@@ -265,7 +265,7 @@ case "play":
                                         
                                         message.channel.send("<@&351908257285275648>");
                                         
-                                        }, 3000);
+                                        }, 2000);
                                 
                                         
                                         setTimeout(function() {
