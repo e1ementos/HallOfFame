@@ -32,6 +32,19 @@ var coinflipp = [
                 "Tails!",
 ]
 
+var roulette = [
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: - Empty barrel!",
+        ":gun: :skull_crossbones: - You've been shot and killed!",
+]
+
 
 var bot = new Discord.Client();
 
@@ -61,26 +74,6 @@ var args = message.content.substring(prefix.length).split(" ");
 switch (args[0].toLowerCase()) {
 
 
-case "dog":
-        let msg = message.channel.send("Generating...")
-
-        let {body} = superagent
-        .get('https://dog.ceo/api/breeds/image/random')
-        console.log(body.file)
-        if (!{body}) return message.channel.send("Error! Please try again.")
-
-        let cEmbed = new Discord.RichEmbed()
-        .setColor(0x00FFFF)
-        .setAuthor('dog command', message.guild.iconURL)
-        .setImage(body.file)
-        .setTimestamp()
-        .setFooter('RIAHOF BOT BEST BOT', bot.user.displayAvatarURL)
-
-        message.channel.send({embed: cEmbed})
-
-        msg.delete();
-
-break;
 
 case "image":
                 const request = require('request');
@@ -94,6 +87,15 @@ case "image":
 		console.log(error);
 	}
 })
+break;
+
+case "roulette":
+                var embed = new Discord.RichEmbed()
+                .addField("**RUSSIAN ROULETTE!**", roulette[Math.floor(Math.random() * roulette.length)])
+                .setThumbnail("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZn-1wPzDZYISx-6QiIJWOKfJzO3ZeaVX5IVLrY6Ls9YadT1y3")
+                .setColor(0x0ff007f)
+                .setFooter('riahof bot best bot')
+                message.channel.sendEmbed(embed);
 break;
 case "addt1":
         var pointst1 = 0
