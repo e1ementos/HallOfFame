@@ -1,6 +1,7 @@
 
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
+const superagent = require("superagent")
 
 
 const TOKEN = "NjI1MDI0MjcwOTg0MjgyMTEy.XZkMxg.kFrkUvGmknuDP6ccbcqIUaLOaTo";
@@ -59,6 +60,27 @@ var args = message.content.substring(prefix.length).split(" ");
 
 switch (args[0].toLowerCase()) {
 
+
+case "dog":
+        let msg = message.channel.send("Generating...")
+
+        let {body} = superagent
+        .get('https://dog.ceo/api/breeds/image/random')
+        console.log(body.file)
+        if (!{body}) return message.channel.send("Error! Please try again.")
+
+        let cEmbed = new Discord.RichEmbed()
+        .setColor(0x00FFFF)
+        .setAuthor('dog command', message.guild.iconURL)
+        .setImage(body.file)
+        .setTimestamp()
+        .setFooter('RIAHOF BOT BEST BOT', bot.user.displayAvatarURL)
+
+        message.channel.send({embed: cEmbed})
+
+        msg.delete();
+
+break;
 
 case "image":
                 const request = require('request');
@@ -376,7 +398,7 @@ case "play":
         message.channel.sendEmbed(embed);
         
         var embed = new Discord.RichEmbed()
-        .addField("**Torrential, August 2017**", "*Congratulations to @Torrential for receiving August's MOTM! You have been an active member ever since you joined, and you've also been extremely fun to play with. You're always in VCs with other people and online on Hypixel. Even though you're a pretty new member, you show activity that we usually see in the older members.*")
+        .addField("**Torrential, August 2017**", "*Congratulations to @Torrential for receiving August's MOTM! You have been an active member ever since you joined, and you've also been extremely fun to       with. You're always in VCs with other people and online on Hypixel. Even though you're a pretty new member, you show activity that we usually see in the older members.*")
         .setThumbnail("https://www.pinclipart.com/picdir/middle/149-1494123_cartoon-trophy-cliparts-9-buy-clip-art-prize.png")
         .setColor(0x0283593)
         message.channel.sendEmbed(embed);
