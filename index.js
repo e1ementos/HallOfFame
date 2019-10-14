@@ -154,7 +154,7 @@ case "play":
                 if (args[1])  {
                         var embed = new Discord.RichEmbed()
                                 .addField("**8BALL RESULTS!**", fortunes[Math.floor(Math.random() * fortunes.length)])
-                                .setThumbnail("http://www.transparentpng.com/thumb/8-ball-pool/N9G8Rr-8-ball-pool-images-png.png")
+                                .setThumbnail("https://www.horoscope.com/images-US/games/game-magic-8-ball-no-text.png")
                                 .setColor(0x0ff007f)
                                 message.channel.sendEmbed(embed);
                 }
