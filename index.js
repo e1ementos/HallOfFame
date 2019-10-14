@@ -39,9 +39,9 @@ var roulette = [
         ":gun: - Empty barrel!",
         ":gun: - Empty barrel!",
         ":gun: - Empty barrel!",
+        ":gun: :skull_crossbones: - You've been shot and killed!",
         ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
+        ":gun: :skull_crossbones: - You've been shot and killed!",
         ":gun: :skull_crossbones: - You've been shot and killed!",
 ]
 
