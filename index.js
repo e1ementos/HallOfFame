@@ -173,7 +173,7 @@ case "play":
                                 
                                         
                                         setTimeout(function() {
-                                                role1.setMentionable(false);
+                                                role.setMentionable(false);
                                                 }, 5000);
                                        
 
@@ -223,7 +223,7 @@ case "play":
                                                 }, 5000);
 
                         } else {
-                                message.channel.send("bruh ur not allowed to do this")
+                                message.channel.send("You're not allowed to do this!")
                         }
                 break;
 
