@@ -161,7 +161,7 @@ case "play":
                                 if (message.member.roles.find(role => role.name === "Beta GvG Organizer")) {
                                 
 
-                                        role1.setMentionable(true);
+                                        role.setMentionable(true);
                                         
                                        
 
@@ -180,7 +180,7 @@ case "play":
                         } else if (message.member.roles.find(role => role.name === "Beta Team Captain")) {
 
 
-                                role1.setMentionable(true);
+                                role.setMentionable(true);
                                         
                                        
 
