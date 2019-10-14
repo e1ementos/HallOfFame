@@ -93,7 +93,7 @@ case "roulette":
                 .setFooter('riahof bot best bot')
                 message.channel.sendEmbed(embed);
 break;
-case "roulette2":
+/* ase "roulette2":
                 var options = roulette.length
 
                 case "roulette":
