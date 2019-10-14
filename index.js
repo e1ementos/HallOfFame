@@ -98,7 +98,7 @@ case "roulette2":
 
                 case "roulette":
                     index = Math.floor(Math.random()) *  options
-                    message.channel.send("**RUSSIAN ROULETTE!**", roulette[options.slice(0, 6)][index])
+                    message.channel.send("**RUSSIAN ROULETTE!**", roulette[options][index])
                     if (index == 0) {
                         options = roulette.length
                     }
