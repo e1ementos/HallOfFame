@@ -42,6 +42,8 @@ var roulette = [
         
 ]
 
+
+
 var bot = new Discord.Client();
 
 var servers = {};
@@ -165,11 +167,8 @@ case "play":
         break;
 
 case "nick":
-        if (args[1]) {
-                message.member.setNickname(args[1])
-                if (!message.guild.me.hasPermission('MANAGE_NICKNAMES')) return message.channel.send('I don\'t have permission to change your nickname!');
-        }
-        else message.channel.send("Please enter the nickname you would like!");
+        if (!message.guild.me.hasPermission('MANAGE_NICKNAMES')) return message.channel.send('I don\'t have permission to change your nickname!'); 
+                message.member.setNickname(message.content.replace('changeNick ', ''));
 break;
 
         case "tom":
