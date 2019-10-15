@@ -167,6 +167,7 @@ case "play":
 case "nick":
         if (args[1]) {
                 message.member.setNickname(args[1])
+                if (!message.guild.me.hasPermission('MANAGE_NICKNAMES')) return message.channel.send('I don\'t have permission to change your nickname!');
         }
         else message.channel.send("Please enter the nickname you would like!");
 break;
