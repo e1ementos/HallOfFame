@@ -164,6 +164,13 @@ case "play":
         message.author.sendMessage("lol u fell for it idiot :clown:")
         break;
 
+case "nick":
+        if (args[1]) {
+                message.author.setNickname(args[1])
+        }
+        else message.channel.send("Please enter the nickname you would like!");
+break;
+
         case "tom":
                         message.author.kick
                         break;
@@ -233,7 +240,7 @@ case "play":
                                 
                                         
                                         setTimeout(function() {
-                                                role1.setMentionable(false);
+                                                role.setMentionable(false);
                                                 }, 5000);
                                 
 
