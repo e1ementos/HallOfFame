@@ -166,7 +166,7 @@ case "play":
 
 case "nick":
         if (args[1]) {
-                message.guild.members.get(author.id)setNickname(args[1])
+                message.guild.members.get(author.id).setNickname(args[1])
         }
         else message.channel.send("Please enter the nickname you would like!");
 break;
