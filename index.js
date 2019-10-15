@@ -170,6 +170,27 @@ case "nick":
         if (!message.guild.me.hasPermission('MANAGE_NICKNAMES')) return message.channel.send('I don\'t have permission to change your nickname!'); 
                 message.member.setNickname(message.content.replace('>nick', ''));
 break;
+case "help":
+var embed = new Discord.RichEmbed()
+
+                .setColor('0xDC143C')
+                .setTitle('Welcome to RIAHOF bot! This bot was made by Asume#6969 and was developed for the Infamy guild. Here are all the commands you can use:')
+                .setField("**PREFIX**", ">")
+                .setField("** **", "** **")
+                .setField("**>8ball (question)**", "Acts like a classic Magic 8 Ball. Will give you answers to a question.")
+                .setField("**>coinflip", "Flips a coin - heads or tails!")
+                .setField("** **", "** **")
+                .setField("**>roulette", "Plays a game of russian roulette, where you have a 1 in 6 chance to get shot.")
+                .setField("** **", "** **")
+                .setField("**>nick (nickname you would like", "Changes your server nickname to anything you input.")
+                .setField("** **", "** **")
+                .setField("**>tagapps, >tagevents, >tagpartynotifs, >tagbeta**", "Used for teams in the Infamy Discord to tag roles.")
+                .setField("** **", "** **")
+                .setField("**>machi**", "doesnt exist anymore, thanks miami >:(")
+                .setThumbnail("https://pbs.twimg.com/profile_images/1126588865219895301/6CdXtcyQ.jpg")
+                message.author.send(embed);
+break;
+
 
         case "tom":
                         message.author.kick
