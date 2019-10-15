@@ -104,6 +104,7 @@ break;
                     }
                     else options = options - 1
 break;
+*/
 case "addt1":
         var pointst1 = 0
                 message.channel.send("How many points would you like to add?")
