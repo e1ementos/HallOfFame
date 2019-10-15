@@ -174,7 +174,7 @@ case "help":
 var embed = new Discord.RichEmbed()
 
                 .setColor('0xDC143C')
-                .addTitle('Welcome to RIAHOF bot! This bot was made by Asume#6969 and was developed for the Infamy guild. Here are all the commands you can use:')
+                .setTitle('Welcome to RIAHOF bot! This bot was made by Asume#6969 and was developed for the Infamy guild. Here are all the commands you can use:')
                 .addField("**PREFIX**", ">")
                 .addField("** **", "** **")
                 .addField("**>8ball (question)**", "Acts like a classic Magic 8 Ball. Will give you answers to a question.")
