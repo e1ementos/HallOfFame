@@ -64,9 +64,9 @@ if (message.content.contains == "<@625024270984282112>") {
         message.author.sendMessage("i love u");
 }
 
-if (!message.content.startsWith(prefix)) return;
+if (!message.content.startsWith(PREFIX)) return;
 
-var args = message.content.substring(prefix.length).split(" ");
+var args = message.content.substring(PREFIX.length).split(" ");
 
 
 switch (args[0].toLowerCase()) {
