@@ -3,6 +3,7 @@ const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 const superagent = require("superagent")
 
+const TOKEN = process.env.TOKEN
 const PREFIX = ">";
 
 function play(connection, message) {
