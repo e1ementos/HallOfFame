@@ -3,8 +3,6 @@ const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 const superagent = require("superagent")
 
-
-const TOKEN = "NjI1MDI0MjcwOTg0MjgyMTEy.XZkMxg.kFrkUvGmknuDP6ccbcqIUaLOaTo";
 const PREFIX = ">";
 
 function play(connection, message) {
@@ -51,7 +49,7 @@ var servers = {};
 var t1points = 0
 
 bot.on("ready", function() {
-console.log("ready");
+console.log("bots up lads pog");
 });
 
 bot.on("message", function(message) {
