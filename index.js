@@ -278,7 +278,6 @@ break;
                                 
 
                                         role1.setMentionable(true);
-                                        
                                        
 
                                 setTimeout(function() {
