@@ -117,6 +117,11 @@ case "addt1":
                         
                 }
                 
+
+if (message.content == '<@625024270984282112>) {
+message.channel.send('and wot');
+}
+
         break;
 case "wdhawoh":
         message.channel.send("sup");
