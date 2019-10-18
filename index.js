@@ -212,13 +212,13 @@ break;
 	        message.channel.send(avatarEmbed);
                         break;
         case "8ball":
-                if (args[1])  {
+                if (args[1] && !message.content == 'AND wot')  {
                         var embed = new Discord.RichEmbed()
                                 .addField("**8BALL RESULTS!**", fortunes[Math.floor(Math.random() * fortunes.length)])
                                 .setThumbnail("https://www.horoscope.com/images-US/games/game-magic-8-ball-no-text.png")
                                 .setColor(0x0ff007f)
                                 message.channel.sendEmbed(embed);
-
+}
                 if (message.content == '>8ball AND wot') {
 var embed = new Discord.RichEmbed()
 .addField('**8BALL RESULTS!**', 'NOO please am scared')
@@ -226,7 +226,6 @@ var embed = new Discord.RichEmbed()
 .setColor(0x0ff007f)
 message.channel.sendEmbed(embed);
 }
-                }
 
                 else {
                 message.channel.sendMessage("incorrect usage");
