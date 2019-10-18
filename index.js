@@ -218,6 +218,14 @@ break;
                                 .setThumbnail("https://www.horoscope.com/images-US/games/game-magic-8-ball-no-text.png")
                                 .setColor(0x0ff007f)
                                 message.channel.sendEmbed(embed);
+
+                if (message.content.contains == 'AND wot') {
+var embed = new Discord.RichEmbed()
+.addField('**8BALL RESULTS!**', 'NOO please am scared')
+.setThumbnail("https://www.horoscope.com/images-US/games/game-magic-8-ball-no-text.png")
+.setColor(0x0ff007f)
+message.channel.sendEmbed(embed);
+}
                 }
 
                 else {
