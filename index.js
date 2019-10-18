@@ -116,12 +116,12 @@ case "addt1":
                         var pointst1 = pointst1 + pointst1add
                         
                 }
-                
+                break;
 
-if (message.content == '<@625024270984282112>) 
-message.channel.send('and wot')
-
-        break;
+if (message.content == "<@625024270984282112>") {
+        message.channel.send ("and wot");
+}
+     
 case "wdhawoh":
         message.channel.send("sup");
         break;
