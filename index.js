@@ -70,6 +70,10 @@ var tomimgs = [
         "https://cdn.discordapp.com/attachments/633040773599723531/639130569900556298/rodmantom.jpg",
 ]
 
+var wlmembers = [
+        
+];
+
 var bot = new Discord.Client();
 
 var servers = {};
@@ -231,11 +235,8 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-
 case "wladd":
-var wlmembers = [
-        "user1"
-];
+
 if (args[1]) {
         var user1 = args[1]
         wlmembers.push(user1);
