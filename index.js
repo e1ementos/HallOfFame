@@ -37,8 +37,7 @@ var roulette = [
         ":gun: - Empty barrel!",
         ":gun: - Empty barrel!",
         ":gun: - Empty barrel!",
-        ":gun: - Empty barrel!",
-        
+        ":gun: - Empty barrel!"
 ]
 
 
@@ -168,6 +167,16 @@ case "play":
 case "nick":
         if (!message.guild.me.hasPermission('MANAGE_NICKNAMES')) return message.channel.send('I don\'t have permission to change your nickname!'); 
                 message.member.setNickname(message.content.replace('>nick', ''));
+break;
+case "tom":
+                if (message.author.id !== "327886539944230912") return;
+                var embed = new Discord.RichEmbed()
+                .addField("**:yum: :yum:**", "*:yum: :yum:*")
+                .setThumbnail("https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png")
+                .setColor(0x0ff007f)
+                .setFooter(":weary:")
+                message.channel.sendEmbed(embed);
+
 break;
 case "help":
 var embed = new Discord.RichEmbed()
