@@ -233,8 +233,8 @@ break;
 
 case "someone":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
-                message.channel.send("Your random user:")
-                message.channel.send("<@" + message.guild.members.random().id + ">")
+                
+                message.channel.send("Your random user: " + "<@" + message.guild.members.random().id + ">")
         
 break;
 
