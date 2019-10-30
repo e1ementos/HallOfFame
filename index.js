@@ -173,7 +173,7 @@ case "nick":
                 message.member.setNickname(message.content.replace('>nick', ''));
 break;
 case "tom":
-                if (message.author.id !== "327886539944230912") return;
+                if (message.guild.id !== "558756951325016084") return;
                 var embed = new Discord.RichEmbed()
                 .addField("**:yum: :yum:**", "*:yum: :yum:*")
                 .setThumbnail("https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png")
