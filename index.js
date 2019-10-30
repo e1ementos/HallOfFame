@@ -97,10 +97,10 @@ if (message.content.contains == "<@625024270984282112>") {
 if (!message.content.startsWith(PREFIX)) return;
 
 
-if (message.content == "<@310757475856941058>") {
+if (message.content == "@e1ementos") {
         message.channel.send("yea dat is so annoying no one likes him")
         }
-        
+
 var args = message.content.substring(PREFIX.length).split(" ");
 
 
