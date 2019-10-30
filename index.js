@@ -232,7 +232,7 @@ var embed = new Discord.RichEmbed()
 break;
 
 case "someone":
-message.channel.send("<@" + message.guild.members.random.id + ">")
+message.channel.send("<@" + message.guild.members.random().id + ">")
 break;
 
         case "tom":
