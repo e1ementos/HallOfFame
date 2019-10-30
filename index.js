@@ -232,8 +232,7 @@ var embed = new Discord.RichEmbed()
 break;
 
 case "someone":
-                if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") { 
-                        message.channel.send("you're not allowed to do this") } return; 
+                if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
                 
                 message.channel.send("Your random user: " + "<@" + message.guild.members.random().id + ">")
         
