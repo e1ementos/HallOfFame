@@ -231,17 +231,16 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-var wlmembers = [
-        
-];
+var wlmembers = [];
 case "wladd":
 if (args[1]) {
         wlmembers.push(args[1]);
         message.channel.send((args[1] + "added to the waiting list!"))
 }
+else return;
 break;
 case "wl":
-message.channel.send(wl)
+message.channel.send(wlmembers)
 break;
 case "someone":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
