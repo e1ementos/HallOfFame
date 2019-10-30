@@ -231,9 +231,9 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-var user = message.guild.members.random();
+var p = message.guild.members.random();
 case "someone":
-message.channel.send("<@" + guild.user.id + ">")
+message.channel.send("<@" + message.p.id + ">")
 break;
 
         case "tom":
