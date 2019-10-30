@@ -235,7 +235,7 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-case "wladd":
+/* case "wladd":
 
 if (args[1]) {
         var user1 = args[1]
@@ -253,14 +253,17 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 case "wl":
 message.channel.send(wlmembers)
-break;
+break; */
 case "someone":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
                 
                 message.channel.send("Your random user: " + "<@" + message.guild.members.random().id + ">")
         
 break;
-
+case "ed":
+                if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
+message.channel.send("no body likes u")
+break;
         case "tom":
                         message.author.kick
                         break;
