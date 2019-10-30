@@ -231,8 +231,9 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-var wlmembers = [];
+
 case "wladd":
+var wlmembers = [];
 if (args[1]) {
         var user1 = args[1]
         wlmembers.push(user1);
