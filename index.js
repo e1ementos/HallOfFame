@@ -244,6 +244,13 @@ if (args[1]) {
 }       
 else return;
 break;
+case "wlremove":
+if (args[1]) {
+        var user2 = args[1]
+        delete wlmembers[user2]
+}
+else message.channel.send("Please list the user you want to remove!")
+break;
 case "wl":
 message.channel.send(wlmembers)
 break;
