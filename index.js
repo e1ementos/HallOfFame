@@ -234,7 +234,8 @@ break;
 var wlmembers = [];
 case "wladd":
 if (args[1]) {
-        wlmembers.push(args[1]);
+        var user1 = args[1]
+        wlmembers.push(user1);
         message.channel.send((args[1] + "added to the waiting list!"))
 }
 else return;
