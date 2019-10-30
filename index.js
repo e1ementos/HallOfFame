@@ -262,7 +262,9 @@ case "someone":
 break;
 case "ed":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
-message.channel.send("no body likes u")
+if (message.content == "<@310757475856941058>") {
+message.channel.send("yea dat is so annoying no one likes him")
+}
 break;
         case "tom":
                         message.author.kick
