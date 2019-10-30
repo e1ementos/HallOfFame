@@ -234,7 +234,7 @@ break;
 
 case "wladd":
 var wlmembers = [
-        user1
+        "user1"
 ];
 if (args[1]) {
         var user1 = args[1]
