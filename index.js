@@ -96,6 +96,11 @@ if (message.content.contains == "<@625024270984282112>") {
 
 if (!message.content.startsWith(PREFIX)) return;
 
+
+if (message.content == "<@310757475856941058>") {
+        message.channel.send("yea dat is so annoying no one likes him")
+        }
+        
 var args = message.content.substring(PREFIX.length).split(" ");
 
 
@@ -260,12 +265,9 @@ case "someone":
                 message.channel.send("Your random user: " + "<@" + message.guild.members.random().id + ">")
         
 break;
-case "ed":
-                if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
-if (message.content == "<@310757475856941058>") {
-message.channel.send("yea dat is so annoying no one likes him")
-}
-break;
+
+
+
         case "tom":
                         message.author.kick
                         break;
