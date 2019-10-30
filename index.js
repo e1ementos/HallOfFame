@@ -175,8 +175,8 @@ break;
 case "tom":
                 if (message.guild.id !== "558756951325016084") return;
                 var embed = new Discord.RichEmbed()
-                .addField("**:yum: :yum:**", "*:yum: :yum:*")
-                .setThumbnail("https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png")
+                .addField(":yum: :yum:")
+                .setImage("https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png")
                 .setColor(0x0ff007f)
                 .setFooter(":weary:")
                 message.channel.sendEmbed(embed);
