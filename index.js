@@ -97,7 +97,7 @@ if (message.content.contains == "<@625024270984282112>") {
 if (!message.content.startsWith(PREFIX)) return;
 
 
-if (message.content == "@e1ementos") {
+if (message.content.contains == "ed") {
         message.channel.send("yea dat is so annoying no one likes him")
         }
 
