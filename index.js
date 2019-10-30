@@ -203,7 +203,6 @@ break;
 case "tom":
                 if (message.guild.id !== "558756951325016084") return;
                 var embed = new Discord.RichEmbed()
-                .setTitle(":yum: :yum:")
                 .setImage(tomimgs[Math.floor(Math.random() * tomimgs.length)])
                 .setColor(0x0ff007f)
                 message.channel.sendEmbed(embed);
