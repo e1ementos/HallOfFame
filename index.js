@@ -231,6 +231,17 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
+var wl = [
+        
+];
+case "wl add":
+if (args[1]) {
+        wl.push(args[1]);
+}
+break;
+case "wl":
+message.channel.send(wl)
+break;
 case "someone":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
                 
