@@ -115,8 +115,12 @@ case "addt1":
                         var pointst1 = pointst1 + pointst1add
                         
                 }
-                
-        break;
+                break;
+
+if (message.content == "<@625024270984282112>") {
+        message.channel.send ("and wot");
+}
+     
 case "wdhawoh":
         message.channel.send("sup");
         break;
@@ -227,7 +231,7 @@ break;
                                 .setThumbnail("https://www.horoscope.com/images-US/games/game-magic-8-ball-no-text.png")
                                 .setColor(0x0ff007f)
                                 message.channel.sendEmbed(embed);
-                }
+}
 
                 else {
                 message.channel.sendMessage("incorrect usage");
