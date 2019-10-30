@@ -233,7 +233,7 @@ break;
 
 var user = message.guild.members.random();
 case "someone":
-message.channel.send(message.members.user.tag)
+message.channel.send("<@" + guild.user.id + ">")
 break;
 
         case "tom":
