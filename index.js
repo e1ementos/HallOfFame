@@ -67,6 +67,7 @@ var tomimgs = [
         "https://cdn.discordapp.com/attachments/633040773599723531/639127432858828813/bejT7FOy6ZqPvANCS3B3t34VHxyPaEeLGKyiggrmBzCuHcxwKlwRyDbJf2CIwNIiXoww-Pmg9gDhUhKiDOL_WxwxAJ3s2TTPVMEE.png",
         "https://cdn.discordapp.com/attachments/633040773599723531/639127459987456000/4sukErpq4FdXO82dme05U3JVWERSxWHbrt4kxEoHS8WHsbkOKR1j8lHSZkWr4uONhUjJUtE-Q9L2pkdep3ASFT-bBwaE181VN3G5.png",
         "https://cdn.discordapp.com/attachments/633040773599723531/639127486994841650/odhwyYd4OiAouiOgvSFkV_z9Veexe6TSt-GenIRG3qVPJnycpRdV1jjQBiYPb2rMSDQkfbvvd8xZmpp3YiiV_h8D3_g50oJT9t_W.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639130569900556298/rodmantom.jpg",
 ]
 
 var bot = new Discord.Client();
