@@ -231,12 +231,13 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-var wl = [
+var wlmembers = [
         
 ];
-case "wl add":
+case "wladd":
 if (args[1]) {
-        wl.push(args[1]);
+        wlmembers.push(args[1]);
+        message.channel.send((args[1] + "added to the waiting list!"))
 }
 break;
 case "wl":
