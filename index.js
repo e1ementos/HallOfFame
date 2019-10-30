@@ -40,7 +40,34 @@ var roulette = [
         ":gun: - Empty barrel!"
 ]
 
-
+var tomimgs = [
+        "https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126702286438400/FRBed-2Yh_f25FoQc54rVX0HiQIQ-svkS9sZ216KCoaII_IWoa-qUgGmZvqILfPY3xjSDyldjrxm0J1nFhKhrZHch6JppBot0HDV.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126774839509002/C6GcUiFKqctA51MOAcHuybrCoD5t2bHSCBX6u2EFdrH2SSP2XzaPbH3-4XzgXt3ChXBdlJu-YcUERkCKNqNUdHfflXLewr_vvaGz.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126739527925780/h335_fR4bNNYo6oHfwH63LumQtLwtaug9__QF2DN37rWOsg5y9Y8ETlIV7Uxjde7Ep3jvUp2drFw9ApsOpsRuL4N-4C_jsFqFBeW.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126805894266900/XjvSMZTAShgWz5oR0FlLEzaGDQvmpseyBANuFQ0ih5CJfeD7-MqLBopMgSwXtLTLL9p_N7xal4Fas9TBAqP31_ZJAB7uxAQOW46U.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126825938714635/0s8F4vO7e2l7XvuvXTeX5PQAVmmEFK4dPda-L4Mwcq4lEXB_9Hk8VeA9zRRCKefQnHhXgafoPgKJwVFX_iX5TfbdtsSf7VF9zhNP.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126846629478410/secwXmJ2PH7KOX9xBBSRsmdBcZ8HuCCSq2EwmSrKzmuH79Zk7JU2bfTAgErfBS-tTtLB1-e0nyspw7DQ-zrJ0BgtEcL1kdZL6R43.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126876123693056/AuzpBcjE3VDUK_EkYaHb3R6PYOVkNaSknE_tec7VYEdytG837Ri1x9ZGlIMyOULT2-jwFAEsovVHh6G4JrSjti0rJoPyypjlHiVw.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126895962750992/eDgLz02hMIBfUoaiNjuSOLj7YEWtG2gkUKPH2mplpxBHKKqWUitUr4AVSldyXXwpaQC-ytylgsLfDx8fOAYCG5VxesndGZIcaacB.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126929374576650/asn3YWxLnKIVF3EI9CP0C_DFMFCtsARws7AkrYveGp9UvorcFvHd2ZYCit9YGKq2zRKYJ5t1AEWzbEhTpS7okvBl6YK9do_UN6_c.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639126997037219851/xaUHUlsQchI2W9lu-ehUxcYlZkJFvwJfCX1zT1UXjNlcY3BpTOH12WxEKbk2fi6kEdSpUhLWEX6uFa4zWgeMhRU-z5iG-js3beO_.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127036748890157/unknown.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127086937931776/MaB3m3dahTp0Y-BoSDuZkvRT3Dq3hy9n9unRLzQujHPlC27rIVU_nRB_Db0EjRIoKRq-cvIRA2G5RqaELGWYItWSwx91hYQQGoFR.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127110765772964/kO0_FaExBxMWg9RgvVAHMlXWJuN_qo-o25KJbe03CPUMPjBn1vQWf5wTbQvQO6iF_LGod2b7ziZW6veakHZIv4Mc3K326UvNEUB6.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127142264733705/0734-T8UShP5j9kIE2hoyw2TQ9F6xRi2763S3QzZVjuccGiIwMXk784hTdO7RQ3R2RQrMVu7oWNhsiPJB3Bp-hlbOgP6l_Q9J_Yu.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127169490223126/02vMybbkrIkzvAs5xJI7dzjF7X3af1bkmnDQU4J3vn2VPyJrqI3_1l4_JSR6bGs0AcNRiO5Ehjv9Wt5zchZEDeGUWVCGClyR1hwZ.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127192432934922/kjiN2xvinzwNSimWFaQj16VW1ZOVtIGeX3UbCcdbk3cGJPJPgXmZiYNoyEixcJAzN4jYZ3pL2JjaNLpcTQukQnNhEu1M0FFWtbH7.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127209801416762/5-cHfCkLhPvtqv7HZuPPbS_Db8s0_A2M62kn7ogSmkEvhwE8WT-z7dAyLz3hy4ZAixUlNaHnc6C-68Huwb2sjfiwf7f5I7syio-S.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127242110140476/jN-8PDIF6Qt7f6iipRqYp9c9bgAvCddAsHIb9bZ9aPy-pM6KxRMAA9ZCFSqNGXyiVoHnJzqyaSFKziM3i_4HZdlU2FIqOaZXgDyA.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127286204989460/fvLPss3sEZHQAZwsa6EZbCrpsToDlHVbP3eBroCHGJeO4RQCa33IQNlLId7R4CLixfnlNx0-fcCbUdJzimfsRYhJNlWitl9SnAa3.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127337321103371/63kjttEaKI7GAYu0W53u_syq0A7HP8SmPFCb5-Q49mClT4AXsd27laT0JjrN-se39lPC0uzPZuRq3lILFlaKHjz9ZhiFZIK4h8Vo.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127375183085571/8hLeyQwYTCgy-2AH-3ZIougBX_hko67mBAGH0p9GWPqkx_y8-KA11JPiT7Ux7r8D_sm4An7_-A3bVrIdkLTHX4i9HTFn54ebztM7.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127401506275328/KR8MV_B02wmKwNWP3HJflEWaL1cLzYYVj6nbxk0zWTKefY5tHqtGHBpSpOP3xG1r_1fBbh4P1X6zLHlI6eMykYGe7OLZFIm9yGWm.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127432858828813/bejT7FOy6ZqPvANCS3B3t34VHxyPaEeLGKyiggrmBzCuHcxwKlwRyDbJf2CIwNIiXoww-Pmg9gDhUhKiDOL_WxwxAJ3s2TTPVMEE.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127459987456000/4sukErpq4FdXO82dme05U3JVWERSxWHbrt4kxEoHS8WHsbkOKR1j8lHSZkWr4uONhUjJUtE-Q9L2pkdep3ASFT-bBwaE181VN3G5.png",
+        "https://cdn.discordapp.com/attachments/633040773599723531/639127486994841650/odhwyYd4OiAouiOgvSFkV_z9Veexe6TSt-GenIRG3qVPJnycpRdV1jjQBiYPb2rMSDQkfbvvd8xZmpp3YiiV_h8D3_g50oJT9t_W.png",
+]
 
 var bot = new Discord.Client();
 
@@ -176,7 +203,7 @@ case "tom":
                 if (message.guild.id !== "558756951325016084") return;
                 var embed = new Discord.RichEmbed()
                 .setTitle(":yum: :yum:")
-                .setImage("https://cdn.discordapp.com/attachments/633040773599723531/639055070402445322/unknown-3.png")
+                .setImage(tomimgs[Math.floor(Math.random() * tomimgs.length)])
                 .setColor(0x0ff007f)
                 message.channel.sendEmbed(embed);
 
