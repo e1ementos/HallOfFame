@@ -101,6 +101,10 @@ if (!message.content.startsWith(PREFIX)) return;
 if (message.content.includes == "ed") {
         message.channel.send("yea dat is so annoying no one likes him")
         }
+	
+if (message.content.includes == "arjan") {
+	message.channel.send("idiot")
+	}
 
 var args = message.content.substring(PREFIX.length).split(" ");
 
