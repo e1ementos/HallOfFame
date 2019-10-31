@@ -277,8 +277,8 @@ if (args[1]) {
                     wlmembers.splice(i, 1);    
                     var embed = new Discord.RichEmbed()
                     .setColor(0x00ff00)
-                .addField('**Success!**')
-                .addField(args[1] + " has been removed from the waiting list!")
+                .setTitle('**Success!**')
+                .addField(args[1] + " has been removed from the waiting list!", "** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                                            message.channel.send(embed)
                         
@@ -301,8 +301,7 @@ if (args[1]) {
 else var embed1 = new Discord.RichEmbed() 
 .setColor(0xff0000)
 .setTitle('**Error!**')
-.addField("Please list the user you would like to remove!")
-.addField("** **")
+.addField("Please list the user you would like to remove!", "** **")
 .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
 message.channel.send(embed1)
 
