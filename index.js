@@ -251,7 +251,7 @@ if (args[1]) {
                  .setColor(0x00ff00)
                 .setTitle('Success!')
                 .addField(args[1] + " has been added to the waiting list!")
-                .setFooter("** **")
+                .addField("** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
 }       
@@ -269,7 +269,7 @@ if (args[1]) {
                     .setColor(0x00ff00)
                 .setTitle('Success!')
                 .addField(args[1] + " has been removed from the waiting list!")
-                .setFooter("** **")
+                .addField("** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
                 }
@@ -289,6 +289,7 @@ else var embed = new Discord.RichEmbed()
 .setColor(0xff0000)
 .setTitle('Error!')
 .addField("Please list the user you would like to remove!")
+.addField("** **")
 .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
 message.channel.send(embed)
 break;
