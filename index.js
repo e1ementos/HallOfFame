@@ -244,10 +244,6 @@ case "wladd":
 
 if (args[1]) {
         var user1 = args[1]
-        var embed = new Discord.RichEmbed()
-        .setColor('ffa500')
-        .setTitle(user1)
-        .setFooter("Priority:" + wlmembers.indexOf())
         wlmembers.push(user1);
         message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
@@ -262,7 +258,11 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-message.channel.send(wlmembers)
+                var embed = new Discord.RichEmbed()
+                .setColor('ffa500')
+                .setTitle(wlmembers)
+                .setFooter("Priority:" + wlmembers.indexOf())
+                message.channel.send(embed)
 break; 
 
 case "wlup":
