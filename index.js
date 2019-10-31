@@ -247,27 +247,19 @@ break;
 case "wladd":
 
 if (args[1]) {
-        let name = message.guild.members.find(user => user.username == args[1])
+        let name = message.guild.members.find(user => user.username == args[1]).id
         var user1 = args[1]
-        wlmembers.push(user1);
+        wlmembers.push(name);
         var embed = new Discord.RichEmbed()
                  .setColor(0x00ff00)
                 .setTitle('**Success!**')
-                .addField(args[1] + " has been added to the waiting list!", "** **")
+                .addField(name + " has been added to the waiting list!", "** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
         
         }       
 
 else return;
-break;
-var status = "I don't feel so good"
-case "ben":
-if (message.guild.id !== "558756951325016084") return;
-if (status = "I don't feel so good" && message.author.id !== "150708527638249473") {
-        message.channel.send("blergh")
-}
-else message.channel.send("arjan is not allowed 2 do dis")
 break;
 
 case "wlremove":
@@ -309,6 +301,8 @@ message.channel.send(embed1)
 break;
 
 case "wl":
+
+        
         if (wlmembers[0] !== undefined) {
                 var embedtt = new Discord.RichEmbed()
                 .setColor(0xffa500)
@@ -363,6 +357,7 @@ case "wl":
                 .setColor(0xffa500)
                 .setTitle(wlmembers[7])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[7])) 
+                .setThumbnail("")
         message.channel.send(embedtt)
         }
         if (wlmembers[8] !== undefined) {
