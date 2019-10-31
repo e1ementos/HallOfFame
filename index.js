@@ -259,7 +259,7 @@ break;
 case "wlremove":
 if (args[1]) {
         var a = wlmembers.indexOf(args[1])
-        wlmembers.splice[a]
+        wlmembers.splice(a)
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
