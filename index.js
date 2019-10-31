@@ -250,10 +250,7 @@ if (args[1]) {
         message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
 else return;
- var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
-                .setTitle(wlmembers.user1)
-                .setFooter("Priority:" + wlmembers.indexOf(user1)) 
+
 
 break;
 case "wlremove":
@@ -265,7 +262,7 @@ if (args[1]) {
                     // break;       //<-- Uncomment  if only the first term has to be removed
                 }
             }
-            message.channel.send(args[1] + "has been removed from the waiting list!")
+            message.channel.send(args[1] + " has been removed from the waiting list!")
 
             if (wlmembers === undefined || wlmembers.length == 0) {
                 // array empty or does not exist
@@ -277,7 +274,11 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-        message.channel.send(wlmembers)    
+                var embedtt = new Discord.RichEmbed()
+                .setColor('ffa500')
+                .setTitle(wlmembers)
+                .setFooter("Priority:" + wlmembers.indexOf()) 
+        message.channel.send(embedtt)    
 break; 
 
 case "wlup":
