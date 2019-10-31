@@ -123,7 +123,9 @@ case "image":
 	}
 })
 break;
+case "mdwjioahdo;qwhowrq":
 
+break;
 case "roulette":
                 var embed = new Discord.RichEmbed()
                 .addField("**RUSSIAN ROULETTE!**", roulette[Math.floor(Math.random() * roulette.length)])
