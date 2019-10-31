@@ -245,16 +245,20 @@ break;
 case "wladd":
 
 if (args[1]) {
+        let name = client.users.find(user => user.username == args[1])
+        let id = name.id
         var user1 = args[1]
         wlmembers.push(user1);
         var embed = new Discord.RichEmbed()
                  .setColor(0x00ff00)
-                .setTitle('Success!')
-                .addField(args[1] + " has been added to the waiting list!")
+                .setTitle('**Success!**')
+                .addField("<@" + id + ">" + " has been added to the waiting list!")
                 .addField("** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
-}       
+        
+        }       
+
 else return;
 
 
@@ -267,9 +271,9 @@ if (args[1]) {
                     wlmembers.splice(i, 1);    
                     var embed = new Discord.RichEmbed()
                     .setColor(0x00ff00)
-                .setTitle('Success!')
-                .addField(args[1] + " has been removed from the waiting list!")
-                .addField("** **")
+                .addField('**Success!**')
+                .addField("<@" + id + ">" + " has been removed from the waiting list!")
+                
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
                 }
@@ -287,7 +291,7 @@ if (args[1]) {
         }
 else var embed = new Discord.RichEmbed()
 .setColor(0xff0000)
-.setTitle('Error!')
+.setTitle('**Error!**')
 .addField("Please list the user you would like to remove!")
 .addField("** **")
 .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
