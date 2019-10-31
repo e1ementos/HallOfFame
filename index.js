@@ -275,18 +275,14 @@ if (args[1]) {
         for (var i=wlmembers.length-1; i>=0; i--) {
                 if (wlmembers[i] === search_term) {
                     wlmembers.splice(i, 1);    
-                    
                     var embed = new Discord.RichEmbed()
                     .setColor(0x00ff00)
                 .addField('**Success!**')
                 .addField(args[1] + " has been removed from the waiting list!")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
-
-                    setTimeout(function() {
-                                        
-                        message.channel.send(embed)
+                                           message.channel.send(embed)
                         
-                        }, 2000);
+
                         
                 
                 
@@ -301,15 +297,15 @@ if (args[1]) {
             message.channel.send(embed)
         } */
 
-            
         }
-else var embed = new Discord.RichEmbed()
+else var embed1 = new Discord.RichEmbed() 
 .setColor(0xff0000)
 .setTitle('**Error!**')
 .addField("Please list the user you would like to remove!")
 .addField("** **")
 .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
-message.channel.send(embed)
+message.channel.send(embed1)
+
 break;
 
 case "wl":
