@@ -240,10 +240,14 @@ var embed = new Discord.RichEmbed()
                 message.author.send(embed);
 break;
 
-/* case "wladd":
+case "wladd":
 
 if (args[1]) {
         var user1 = args[1]
+        var embed = new Discord.RichEmbed()
+        .setColor('ffa500')
+        .setTitle(user1)
+        .setFooter("Priority:" + wlmembers.indexOf())
         wlmembers.push(user1);
         message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
@@ -252,13 +256,18 @@ break;
 case "wlremove":
 if (args[1]) {
         var user2 = args[1]
-        wlmembers.reduce[user2]
+        delete wlmembers[user2]
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
+
 case "wl":
 message.channel.send(wlmembers)
-break; */
+break; 
+
+case "wlup":
+
+break;
 case "someone":
                 if (message.guild.id == "231218737485709322" && message.author.id !== "150708527638249473") return; 
                 
