@@ -263,8 +263,7 @@ if (args[1]) {
         var search_term = args[1]
         for (var i=wlmembers.length-1; i>=0; i--) {
                 if (wlmembers[i] === search_term) {
-                    wlmembers.splice(i, 1);
-                    // break;       //<-- Uncomment  if only the first term has to be removed
+                    wlmembers.splice(i, 1);    
                     var embed = new Discord.RichEmbed()
                     .setColor(0x00ff00)
                 .setTitle('Success!')
@@ -273,14 +272,14 @@ if (args[1]) {
                 message.channel.send(embed)
                 }
             }
-                if (wlmembers[i] !== search_term) {
-                    var embed = new Discord.RichEmbed()
-                    .setColor(0xff0000)
-                .setTitle('Error!')
-                .addField("That person is not on the waiting list!")
-                .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
-                message.channel.send(embed)
-            }
+            /* if (wlmembers[i] !== search_term) {
+                var embed = new Discord.RichEmbed()
+                .setColor(0xff0000)
+            .setTitle('Error!')
+            .addField("That person is not on the waiting list!")
+            .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
+            message.channel.send(embed)
+        } */
 
             
         }
