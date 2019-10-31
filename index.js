@@ -262,10 +262,10 @@ else return;
 var status = "I don't feel so good"
 case "ben":
 if (message.guild.id !== "558756951325016084") return;
-if (status = "I don't feel so good" && message.author !== "150708527638249473") {
+if (status = "I don't feel so good" && message.author.id !== "150708527638249473") {
         message.channel.send("blergh")
 }
-else message.channel.send("Miles is not allowed 2 do dis")
+else message.channel.send("arjan is not allowed 2 do dis")
 break;
 
 break;
