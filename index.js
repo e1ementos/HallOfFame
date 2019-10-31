@@ -245,7 +245,7 @@ break;
 case "wladd":
 
 if (args[1]) {
-        let name = client.users.find(user => user.username == args[1])
+        let name = guild.members.find(user => user.username == args[1])
         let id = name.id
         var user1 = args[1]
         wlmembers.push(user1);
