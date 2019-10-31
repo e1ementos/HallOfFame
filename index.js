@@ -253,7 +253,6 @@ if (args[1]) {
                 .addField(args[1] + " has been added to the waiting list!")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
-        message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
 else return;
 
@@ -283,15 +282,7 @@ if (args[1]) {
                 message.channel.send(embed)
             }
 
-            if (wlmembers === undefined || wlmembers.length == 0) {
-                // array empty or does not exist
-                var embed = new Discord.RichEmbed()
-                 .setColor(0xff0000)
-                .setTitle('Error!')
-                .addField("The waiting list is empty!")
-                .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
-                message.channel.send(embed)
-            }
+            
         }
 else var embed = new Discord.RichEmbed()
 .setColor(0xff0000)
@@ -372,7 +363,15 @@ case "wl":
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[9])) 
         message.channel.send(embedtt)
         }
-        
+        if (wlmembers === undefined || wlmembers.length == 0) {
+                // array empty or does not exist
+                var embed = new Discord.RichEmbed()
+                 .setColor(0xff0000)
+                .setTitle('Error!')
+                .addField("The waiting list is empty!")
+                .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
+                message.channel.send(embed)
+        }
 
 break; 
 
@@ -393,7 +392,7 @@ break;
                         break;
                 case "avatar":
                 const myavatarEmbed = new Discord.RichEmbed()
-	        .setColor('0xDC143C')
+	        .setColor(0xDC143C)
 	        .setTitle('Your avatar...')
 	        .setImage(message.author.avatarURL)	
 	        if (!message.mentions.users.size) {
@@ -401,7 +400,7 @@ break;
 	        }
                 var user = message.mentions.users.first();	
 	        const avatarEmbed = new Discord.RichEmbed()
-	        .setColor('0xDC143C')
+	        .setColor(0xDC143C)
 	        .setTitle(`${user.username}'s avatar...`)
 	        .setImage(user.displayAvatarURL)
 	        message.channel.send(avatarEmbed);
