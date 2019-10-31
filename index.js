@@ -259,6 +259,7 @@ if (args[1]) {
         }       
 
 else return;
+break;
 var status = "I don't feel so good"
 case "ben":
 if (message.guild.id !== "558756951325016084") return;
@@ -268,7 +269,6 @@ if (status = "I don't feel so good" && message.author.id !== "150708527638249473
 else message.channel.send("arjan is not allowed 2 do dis")
 break;
 
-break;
 case "wlremove":
 if (args[1]) {
         var search_term = args[1]
