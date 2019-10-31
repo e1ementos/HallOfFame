@@ -265,6 +265,7 @@ if (args[1]) {
                     // break;       //<-- Uncomment  if only the first term has to be removed
                 }
             }
+            message.channel.send(args[1] + "has been removed from the waiting list!")
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
