@@ -274,57 +274,76 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-        if (wlmembers[0] || wlmembers[1] || wlmembers[2] || wlmembers[3] || wlmembers[4] || wlmembers[5] || wlmembers[6] || wlmembers[7] || wlmembers[8] || wlmembers[9] === undefined) return;
+        if (wlmembers[0] !== undefined) {
                 var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[0])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[0])) 
-        message.channel.send(embedtt)    
+        message.channel.send(embedtt) 
+        }
+        if (wlmembers[1] !== undefined) {   
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[1])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[1])) 
         message.channel.send(embedtt)
+        }
+        if (wlmembers[2] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[2])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[2])) 
         message.channel.send(embedtt)    
+        }
+        if (wlmembers[3] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[3])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[3])) 
         message.channel.send(embedtt)
+        }
+        if (wlmembers[4] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[4])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[4])) 
-        message.channel.send(embedtt)    
+        message.channel.send(embedtt)   
+        }
+        if (wlmembers[5] !== undefined) { 
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[5])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[5])) 
         message.channel.send(embedtt)
+        }
+        if (wlmembers[6] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[6])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[6])) 
         message.channel.send(embedtt)    
+        }
+        if (wlmembers[7] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[7])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[7])) 
         message.channel.send(embedtt)
+        }
+        if (wlmembers[8] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[8])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[8])) 
         message.channel.send(embedtt)    
+        }
+        if (wlmembers[9] !== undefined) {
         var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[9])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[9])) 
         message.channel.send(embedtt)
+        }
         
 
 break; 
