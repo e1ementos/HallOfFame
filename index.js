@@ -276,9 +276,14 @@ break;
 case "wl":
                 var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
-                .setTitle(wlmembers.user1)
-                .setFooter("Priority:" + wlmembers.indexOf(user1)) 
+                .setTitle(wlmembers[1])
+                .setFooter("Priority:" + wlmembers.indexOf()) 
         message.channel.send(embedtt)    
+        var embedtt = new Discord.RichEmbed()
+                .setColor('ffa500')
+                .setTitle(wlmembers[2])
+                .setFooter("Priority:" + wlmembers.indexOf()) 
+        message.channel.send(embedtt)
 break; 
 
 case "wlup":
