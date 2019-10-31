@@ -259,7 +259,6 @@ if (args[1]) {
         }       
 
 else return;
-var status = "I don't feel so good"
 case "ben":
 if (message.guild.id !== "558756951325016084") return;
 if (status = "I don't feel so good" && message.author.id !== "150708527638249473") {
