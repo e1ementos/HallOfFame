@@ -382,7 +382,7 @@ case "wl":
                 var embed = new Discord.RichEmbed()
                  .setColor(0xff0000)
                 .setTitle('Error!')
-                .addField("The waiting list is empty!")
+                .addField("The waiting list is empty!", "** **")
                 .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
                 message.channel.send(embed)
         }
