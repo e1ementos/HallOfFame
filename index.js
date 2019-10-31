@@ -76,6 +76,11 @@ var wlmembers = [
 
 var bot = new Discord.Client();
 
+var embedtt = new Discord.RichEmbed()
+                .setColor('ffa500')
+                .setTitle(user1)
+                .setFooter("Priority:" + wlmembers.indexOf(user1))
+
 var servers = {};
 
 var t1points = 0
@@ -102,6 +107,7 @@ if (message.content.includes == "ed") {
         }
 
 var args = message.content.substring(PREFIX.length).split(" ");
+
 
 
 switch (args[0].toLowerCase()) {
@@ -258,11 +264,7 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-                var embed = new Discord.RichEmbed()
-                .setColor('ffa500')
-                .setTitle(wlmembers)
-                .setFooter("Priority:" + wlmembers.indexOf())
-                message.channel.send(embed)
+        msg.channel.send(embedtt)    
 break; 
 
 case "wlup":
