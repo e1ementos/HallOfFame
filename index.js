@@ -274,6 +274,7 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
+        if (wlmembers[0] || wlmembers[1] || wlmembers[2] || wlmembers[3] || wlmembers[4] || wlmembers[5] || wlmembers[6] || wlmembers[7] || wlmembers[8] || wlmembers[9] === undefined) return;
                 var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
                 .setTitle(wlmembers[0])
@@ -324,7 +325,7 @@ case "wl":
                 .setTitle(wlmembers[9])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[9])) 
         message.channel.send(embedtt)
-        if (wlmembers[0] || wlmembers[1] || wlmembers[2] || wlmembers[3] || wlmembers[4] || wlmembers[5] || wlmembers[6] || wlmembers[7] || wlmembers[8] || wlmembers[9] === undefined) return;
+        
 
 break; 
 
