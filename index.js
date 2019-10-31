@@ -267,7 +267,7 @@ if (args[1]) {
             }
             message.channel.send(args[1] + "has been removed from the waiting list!")
 
-            if (wlmembers === undefined || array.length == 0) {
+            if (wlmembers === undefined || wlmembers.length == 0) {
                 // array empty or does not exist
                 message.channel.send("Waiting list is empty!")
             }
