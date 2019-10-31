@@ -247,6 +247,12 @@ case "wladd":
 if (args[1]) {
         var user1 = args[1]
         wlmembers.push(user1);
+        var embed = new Discord.RichEmbed()
+                 .setColor('0xDC143C')
+                .setTitle(0x00ff00)
+                .addField(args[1] + " has been added to the waiting list!")
+                .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
+                message.channel.send(embed)
         message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
 else return;
@@ -260,87 +266,108 @@ if (args[1]) {
                 if (wlmembers[i] === search_term) {
                     wlmembers.splice(i, 1);
                     // break;       //<-- Uncomment  if only the first term has to be removed
-                    message.channel.send(args[1] + " has been removed from the waiting list!")
+                    var embed = new Discord.RichEmbed()
+                    .setColor(0x00ff00)
+                .setTitle('Success!')
+                .addField(args[1] + " has been removed from the waiting list!")
+                .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
+                message.channel.send(embed)
                 }
             }
-            
+                if (wlmembers[i] !== search_term) {
+                    var embed = new Discord.RichEmbed()
+                    .setColor(0xff0000)
+                .setTitle('Error!')
+                .addField("That person is not on the waiting list!")
+                .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
+                message.channel.send(embed)
+            }
 
             if (wlmembers === undefined || wlmembers.length == 0) {
                 // array empty or does not exist
-                message.channel.send("Waiting list is empty!")
+                var embed = new Discord.RichEmbed()
+                 .setColor(0xff0000)
+                .setTitle('Error!')
+                .addField("The waiting list is empty!")
+                .setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
+                message.channel.send(embed)
             }
-            
-}
-else message.channel.send("Please list the user you want to remove!")
+        }
+else var embed = new Discord.RichEmbed()
+.setColor(0xff0000)
+.setTitle('Error!')
+.addField("Please list the user you would like to remove!")
+.setThumbnail("https://p7.hiclipart.com/preview/621/587/778/no-symbol-computer-icons-clip-art-image-red-cross.jpg")
+message.channel.send(embed)
 break;
 
 case "wl":
         if (wlmembers[0] !== undefined) {
                 var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[0])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[0])) 
         message.channel.send(embedtt) 
         }
         if (wlmembers[1] !== undefined) {   
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[1])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[1])) 
         message.channel.send(embedtt)
         }
         if (wlmembers[2] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[2])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[2])) 
         message.channel.send(embedtt)    
         }
         if (wlmembers[3] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[3])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[3])) 
         message.channel.send(embedtt)
         }
         if (wlmembers[4] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[4])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[4])) 
         message.channel.send(embedtt)   
         }
         if (wlmembers[5] !== undefined) { 
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[5])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[5])) 
         message.channel.send(embedtt)
         }
         if (wlmembers[6] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[6])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[6])) 
         message.channel.send(embedtt)    
         }
         if (wlmembers[7] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[7])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[7])) 
         message.channel.send(embedtt)
         }
         if (wlmembers[8] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[8])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[8])) 
         message.channel.send(embedtt)    
         }
         if (wlmembers[9] !== undefined) {
         var embedtt = new Discord.RichEmbed()
-                .setColor('ffa500')
+                .setColor(0xffa500)
                 .setTitle(wlmembers[9])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[9])) 
         message.channel.send(embedtt)
