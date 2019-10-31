@@ -258,8 +258,13 @@ else return;
 break;
 case "wlremove":
 if (args[1]) {
-        var a = wlmembers.indexOf(args[1])
-        wlmembers.splice(a)
+        var search_term = args[1]
+        for (var i=array.length-1; i>=0; i--) {
+                if (wlmembers[i] === search_term) {
+                    wlmembers.splice(i, 1);
+                    // break;       //<-- Uncomment  if only the first term has to be removed
+                }
+            }
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
