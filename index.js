@@ -250,10 +250,11 @@ if (args[1]) {
         message.channel.send((args[1] + " has been added to the waiting list!"))
 }       
 else return;
-var embedtt = new Discord.RichEmbed()
+ var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
-                .setTitle(user1)
-                .setFooter("Priority:" + wlmembers.indexOf(user1))
+                .setTitle(wlmembers.user1)
+                .setFooter("Priority:" + wlmembers.indexOf(user1)) 
+
 break;
 case "wlremove":
 if (args[1]) {
@@ -264,7 +265,7 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-        message.channel.send(embedtt)    
+        message.channel.send(wlmembers)    
 break; 
 
 case "wlup":
