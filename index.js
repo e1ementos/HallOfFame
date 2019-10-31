@@ -261,6 +261,7 @@ if (args[1]) {
 else return;
 var status = "I don't feel so good"
 case "ben":
+if (message.guild.id !== "558756951325016084") return;
 if (status = "I don't feel so good") {
         message.channel.send("blergh")
 }
@@ -397,9 +398,6 @@ break;
 
 
 
-        case "tom":
-                        message.author.kick
-                        break;
                 case "avatar":
                 const myavatarEmbed = new Discord.RichEmbed()
 	        .setColor(0xDC143C)
