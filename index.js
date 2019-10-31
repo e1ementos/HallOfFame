@@ -264,7 +264,7 @@ else message.channel.send("Please list the user you want to remove!")
 break;
 
 case "wl":
-        msg.channel.send(embedtt)    
+        message.channel.send(embedtt)    
 break; 
 
 case "wlup":
