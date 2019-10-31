@@ -324,7 +324,7 @@ case "wl":
                 .setTitle(wlmembers[9])
                 .setFooter("Priority:" + wlmembers.indexOf(wlmembers[9])) 
         message.channel.send(embedtt)
-        if (wlmembers === undefined) return;
+        if (wlmembers[0] || wlmembers[1] || wlmembers[2] || wlmembers[3] || wlmembers[4] || wlmembers[5] || wlmembers[6] || wlmembers[7] || wlmembers[8] || wlmembers[9] === undefined) return;
 
 break; 
 
