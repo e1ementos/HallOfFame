@@ -266,6 +266,12 @@ if (args[1]) {
                 }
             }
             message.channel.send(args[1] + "has been removed from the waiting list!")
+
+            if (wlmembers === undefined || array.length == 0) {
+                // array empty or does not exist
+                message.channel.send("Waiting list is empty!")
+            }
+            
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
