@@ -276,8 +276,8 @@ break;
 case "wl":
                 var embedtt = new Discord.RichEmbed()
                 .setColor('ffa500')
-                .setTitle(wlmembers)
-                .setFooter("Priority:" + wlmembers.indexOf()) 
+                .setTitle(wlmembers.user1)
+                .setFooter("Priority:" + wlmembers.indexOf(user1)) 
         message.channel.send(embedtt)    
 break; 
 
