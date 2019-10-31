@@ -245,7 +245,7 @@ break;
 case "wladd":
 
 if (args[1]) {
-        let name = message.guild.members.find(user => user.username == args[1]).id
+        let name = message.guild.members.find(user => user.username == args[1])
         var user1 = args[1]
         wlmembers.push(user1);
         var embed = new Discord.RichEmbed()
