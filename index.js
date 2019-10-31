@@ -245,8 +245,7 @@ break;
 case "wladd":
 
 if (args[1]) {
-        let name = message.guild.members.find(user => user.username == args[1])
-        let id = name.id
+        let name = message.guild.members.find(user => user.username == args[1]).id
         var user1 = args[1]
         wlmembers.push(user1);
         var embed = new Discord.RichEmbed()
@@ -272,7 +271,7 @@ if (args[1]) {
                     var embed = new Discord.RichEmbed()
                     .setColor(0x00ff00)
                 .addField('**Success!**')
-                .addField("<@" + id + ">" + " has been removed from the waiting list!")
+                .addField("<@" + name + ">" + " has been removed from the waiting list!")
                 
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
