@@ -259,7 +259,8 @@ break;
 case "wlremove":
 if (args[1]) {
         var user2 = args[1]
-        delete wlmembers[user2]
+        user2 = user1
+        delete wlmembers[user1]
 }
 else message.channel.send("Please list the user you want to remove!")
 break;
