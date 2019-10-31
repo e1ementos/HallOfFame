@@ -248,9 +248,10 @@ if (args[1]) {
         var user1 = args[1]
         wlmembers.push(user1);
         var embed = new Discord.RichEmbed()
-                 .setColor('0xDC143C')
-                .setTitle(0x00ff00)
+                 .setColor(0x00ff00)
+                .setTitle('Success!')
                 .addField(args[1] + " has been added to the waiting list!")
+                .setFooter("** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
 }       
@@ -268,6 +269,7 @@ if (args[1]) {
                     .setColor(0x00ff00)
                 .setTitle('Success!')
                 .addField(args[1] + " has been removed from the waiting list!")
+                .setFooter("** **")
                 .setThumbnail("http://www.pngmart.com/files/3/Green-Tick-Transparent-PNG.png")
                 message.channel.send(embed)
                 }
