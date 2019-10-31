@@ -261,8 +261,8 @@ if (args[1]) {
 else return;
 var status = "I don't feel so good"
 case "ben":
-
-if (status = "I don't feel so good" && message.author !== "244931925381349376") {
+if (message.guild.id !== "558756951325016084") return;
+if (status = "I don't feel so good" && message.author !== "150708527638249473") {
         message.channel.send("blergh")
 }
 else message.channel.send("Miles is not allowed 2 do dis")
