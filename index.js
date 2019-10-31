@@ -259,7 +259,12 @@ if (args[1]) {
         }       
 
 else return;
-
+var status = "I don't feel so good"
+case "ben":
+if (status = "I don't feel so good") {
+        message.channel.send("blergh")
+}
+break;
 
 break;
 case "wlremove":
